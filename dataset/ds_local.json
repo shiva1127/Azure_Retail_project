@@ -19,10 +19,7 @@
 					"value": "@{dataset().file_name}.csv",
 					"type": "Expression"
 				},
-				"folderPath": {
-					"value": "@{dataset().file_name}",
-					"type": "Expression"
-				}
+				"folderPath": "raw"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
