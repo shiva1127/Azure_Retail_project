@@ -20,7 +20,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@dataset().file_name",
+					"value": "@{dataset().file_name}",
 					"type": "Expression"
 				}
 			},
