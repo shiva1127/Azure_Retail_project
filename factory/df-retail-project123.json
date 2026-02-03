@@ -1,0 +1,9 @@
+{
+	"name": "df-retail-project123",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9b3d366c-6551-47bb-9cb9-399fc9f03ba5",
+		"tenantId": "ed729c8b-d9f3-4495-be23-7425ae1fc9f4"
+	}
+}
