@@ -1,0 +1,12 @@
+{
+	"name": "LS_DB",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-7405615243304582.2.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/d37260c4-7e46-4af2-8edb-145cdd86c94d/resourceGroups/rg-retail-project/providers/Microsoft.Databricks/workspaces/db-retail"
+		}
+	}
+}
