@@ -35,30 +35,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "pipeline_bronze_to_silver",
-						"type": "PipelineReference"
-					},
-					"waitOnCompletion": true
-				}
-			},
-			{
-				"name": "Execute_silver_to_gold",
-				"type": "ExecutePipeline",
-				"dependsOn": [
-					{
-						"activity": "Execute_bronze_to_silver",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"pipeline": {
-						"referenceName": "pipeline_silver_to_gold",
+						"referenceName": "pipeline_bronze_to_silver_to_gold",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true
