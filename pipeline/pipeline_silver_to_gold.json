@@ -1,9 +1,9 @@
 {
-	"name": "pipeline_bronze_to_silver",
+	"name": "pipeline_silver_to_gold",
 	"properties": {
 		"activities": [
 			{
-				"name": "bronze_to_silver_notebook",
+				"name": "silver_to_gold_notebook",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/retail_project_notebooks/bronze_to_silver"
+					"notebookPath": "/retail_project_notebooks/silver_to_gold"
 				},
 				"linkedServiceName": {
 					"referenceName": "LS_DB",
