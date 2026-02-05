@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "USE Retail;\nGO\n\n-- FACT TABLES\n\nCREATE OR ALTER VIEW dbo.vw_fact_order_products\nAS\nSELECT *\nFROM OPENROWSET(\n    BULK 'https://stretaildata123.dfs.core.windows.net/gold/fact_order_products/',\n    FORMAT = 'DELTA'\n) AS x;\nGO\n\n\nCREATE OR ALTER VIEW dbo.vw_fact_orders\nAS\nSELECT *\nFROM OPENROWSET(\n    BULK 'https://stretaildata123.dfs.core.windows.net/gold/fact_orders/',\n    FORMAT = 'DELTA'\n) AS x;\nGO\n\n\n-- DIMENSION TABLES\n\nCREATE OR ALTER VIEW dbo.vw_dim_product\nAS\nSELECT *\nFROM OPENROWSET(\n    BULK 'https://stretaildata123.dfs.core.windows.net/gold/dim_product/',\n    FORMAT = 'DELTA'\n) AS x;\nGO\n\n\nCREATE OR ALTER VIEW dbo.vw_dim_customer\nAS\nSELECT *\nFROM OPENROWSET(\n    BULK 'https://stretaildata123.dfs.core.windows.net/gold/dim_customer/',\n    FORMAT = 'DELTA'\n) AS x;\nGO\n\n\nCREATE OR ALTER VIEW dbo.vw_dim_department\nAS\nSELECT *\nFROM OPENROWSET(\n    BULK 'https://stretaildata123.dfs.core.windows.net/gold/dim_department/',\n    FORMAT = 'DELTA'\n) AS x;\nGO\n\n\nCREATE OR ALTER VIEW dbo.vw_dim_aisle\nAS\nSELECT *\nFROM OPENROWSET(\n    BULK 'https://stretaildata123.dfs.core.windows.net/gold/dim_aisle/',\n    FORMAT = 'DELTA'\n) AS x;\nGO\n\n\nCREATE OR ALTER VIEW dbo.vw_dim_date\nAS\nSELECT *\nFROM OPENROWSET(\n    BULK 'https://stretaildata123.dfs.core.windows.net/gold/dim_date/',\n    FORMAT = 'DELTA'\n) AS x;\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "Retail",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
