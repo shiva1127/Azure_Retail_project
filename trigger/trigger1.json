@@ -3,18 +3,7 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "pipeline_bronze_to_silver",
-					"type": "PipelineReference"
-				},
-				"parameters": {
-					"bronze_to_silver": "/Workspace/retail_project_notebooks/bronze_to_silver",
-					"silver_to_gold": "/Workspace/retail_project_notebooks/silver_to_gold"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
