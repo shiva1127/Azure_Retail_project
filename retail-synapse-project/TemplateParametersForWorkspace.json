@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "retail-synapse-project"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"FileServer1_password": {
+			"value": ""
+		},
+		"LS_DB_accessToken": {
+			"value": ""
+		},
+		"ls_sink_accountKey": {
+			"value": ""
+		},
+		"retail-synapse-project-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:retail-synapse-project.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://stretaildata123.dfs.core.windows.net/"
+		},
+		"External_datalake_properties_typeProperties_url": {
+			"value": "https://stretaildata123.dfs.core.windows.net/"
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"value": "C:\\Users\\thiru\\Downloads\\instacart_data"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"value": "thiru"
+		},
+		"ls_sink_properties_typeProperties_url": {
+			"value": "https://stretaildata123.dfs.core.windows.net/"
+		},
+		"retail-synapse-project-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://stretaildata123.dfs.core.windows.net"
+		}
+	}
+}
