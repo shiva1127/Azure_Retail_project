@@ -23,6 +23,14 @@
 				}
 			}
 		],
+		"parameters": {
+			"bronze_to_silver": {
+				"type": "string"
+			},
+			"silver_to_gold": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
